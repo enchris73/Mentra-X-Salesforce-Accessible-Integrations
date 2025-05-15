@@ -1,2 +1,35 @@
-name: Accessible Integrations
+# _config.yml
+
+title: Accessible Integrations
+description: A simple site hosted on GitHub Pages using a Jekyll theme.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://yourusername.github.io" # the base hostname & protocol for your site
+
+# Build settings
 theme: minima
+
+# Optional: Customize the theme
+minima:
+  skin: dark
+  social_links:
+    - platform: github
+      user_url: https://github.com/yourusername
+    - platform: twitter
+      user_url: https://twitter.com/yourhandle
+
+# Exclude these files/folders from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Markdown processing
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Plugins (if needed)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
